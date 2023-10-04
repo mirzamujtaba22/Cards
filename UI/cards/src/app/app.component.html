@@ -1,0 +1,71 @@
+<div class="container">
+  <h1>Cards</h1>
+  <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong> Save Succefully</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close" data-bs-dismiss="alert" aria-label="close"></button>
+    </div>     -->
+<div class="card-container">
+<div class="cards-form">
+<form #form="ngForm" (ngSubmit)="onsubmit()">
+  <div class="form-group">
+    <label for="">Card Name</label>
+    <input type="text" name="cardholderName" [(ngModel)]="Card.cardholderName">
+    <label for="">Card Number</label>
+    <input type="text" name="cardNumberr"  [(ngModel)]="Card.cardNumberr">
+  </div>
+  <div class="form-group form-group-inline">
+    <div>
+    <label for="">CVC</label>
+    <input type="text" name="cvc" [(ngModel)]="Card.cvc">
+  </div>
+  <div style="
+  margin-left: -135px;
+">
+    <label for="">Expiry Month</label>
+    <input type="text" name="expiryMonth" [(ngModel)]="Card.expiryMonth">
+  </div>
+  <div style="margin-left: -100px;">
+    <label for="">Expiry Year</label>
+    <input type="text" name="expiryYear" [(ngModel)]="Card.expiryYear">
+  </div>
+
+  </div>
+  <div class="form-group">
+    <button>Save</button>
+    </div>
+
+</form>
+ </div>
+ <div class="cards-grid" style="margin-top: -296px;">
+
+  <div (click)="popoluteForm(card)" class="card-row"  *ngFor="let card of cards">
+    <div class="card-row-details">
+      <span>{{ card.cardholderName }}</span>
+      <span>{{ card.cardNumberr }}</span>
+    
+
+
+
+    </div>
+    <div class="card-row-action">
+      <a (click)="deletecard(card.id)"><i class="fa-solid fa-trash"></i></a>
+
+    </div>
+  </div>
+ 
+
+
+  <!-- <div class="card-row">
+    <div class="card-row-details">
+      <span>Mirza Mujtaba</span>
+      <span>343434</span>
+
+
+    </div>
+    <div class="card-row-action">
+      <a><i class="fa-solid fa-trash"></i></a>
+
+    </div>
+  </div>
+ </div> -->
+
