@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Cards.BLL\Cards.Application.csproj" />
+    <ProjectReference Include="..\Cards.Infrastructure\Cards.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

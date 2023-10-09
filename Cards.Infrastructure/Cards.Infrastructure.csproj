@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Card.Domain\Cards.Domain.csproj" />
+    <ProjectReference Include="..\Cards.BLL\Cards.Application.csproj" />
   </ItemGroup>
 
 </Project>

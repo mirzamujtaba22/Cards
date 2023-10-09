@@ -5,11 +5,11 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cards.API", "Cards.API\Cards.API.csproj", "{0CBBBB0D-7039-4CFA-BE33-AB5FCAAB235E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cards.Application", "Cards.BLL\Cards.Application.csproj", "{6C7D9B33-022E-4D52-A805-C3FDF42CB24F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cards.Application", "Cards.BLL\Cards.Application.csproj", "{6C7D9B33-022E-4D52-A805-C3FDF42CB24F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cards.Infrastructure", "Cards.Infrastructure\Cards.Infrastructure.csproj", "{6B58999B-561D-49EA-B5C9-8A290B548FBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cards.Infrastructure", "Cards.Infrastructure\Cards.Infrastructure.csproj", "{6B58999B-561D-49EA-B5C9-8A290B548FBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cards.Domain", "Card.Domain\Cards.Domain.csproj", "{80F41555-553D-4ECB-9391-C5EDF7C76222}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cards.Domain", "Card.Domain\Cards.Domain.csproj", "{80F41555-553D-4ECB-9391-C5EDF7C76222}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

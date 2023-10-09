@@ -41,14 +41,14 @@ namespace Cards.API.Controllers
         public async Task<IActionResult> AddCard([FromBody] Card card)
         {
             card.Id = new int();
-            await _cardService.AddAsync(card);
+            _cardService.AddAsync(card);
             return CreatedAtAction(nameof(AddCard), new { card.Id }, card);
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateCard([FromBody] Card card)
+        public IActionResult UpdateCard([FromBody] Card card)
         {
-            var existingcard = await _cardService.UpdateAsync(card);
+            var existingcard = _cardService.Update(card);
             return Ok(existingcard);
         }
         [HttpDelete]

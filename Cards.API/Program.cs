@@ -1,5 +1,7 @@
 
 using Cards.Application.CardService;
+using Cards.Application.IUnitOfWork;
+using Cards.Application.UnitOfWork;
 using Cards.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -13,6 +15,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ICardService, CardService>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 builder.Services.AddDbContext<CardsDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("CardsDbConnectionString")));
 builder.Services.AddCors((setup) =>
 {
